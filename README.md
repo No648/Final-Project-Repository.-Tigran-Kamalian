@@ -1,3 +1,9 @@
 # Final-Project-Repository.-Tigran-Kamalian
 This is the public repository for my final project 
 Concept of operations 
+Base64 is a collection of binary-to-text encoding techniques that encode binary data (particularly, a sequence of 8-bit bytes) into 24-bit sequences that can be represented by four 6-bit Base64 digits.
+Base64, like all binary-to-text encoding techniques, is intended to transport binary data over channels that can only reliably support text content. The ability to embed picture files or other binary assets into textual assets such as HTML and CSS files is one of Base64's most common usage on the World Wide Web.
+Since the overall understanding of the base 64 is given to the reader lets discuss the code and the concepts used while writing it. 
+As it is seen form the information above the uniqeness of the base64 is that it encodes using 6 bits digits instead of 8. This messes up eveything for the decoder and makes hard to retrieve the intial input. Code takes the user input, which is a string of charachters, or in other words array of charachters, gives every charachter their unique and new " form " and prints it. Sounds easy, however it is not that straightforward. First the code takes three charachters at a time, and stores it in a newly formed string. Then the other function identifies how many triplets there are, from the user input. Then it the string runs through other function to see if the number of bits is less than six, and if it is divisble by six it does not have any empty bits, so it does nothing. When number gives a remainder to the division then some other function appends zeros from the right side of the resultant. Finally the string is printed and user sees the result that he got. 
+
+This is a simple walkthrough for the code that you are going to find in the repository. 
